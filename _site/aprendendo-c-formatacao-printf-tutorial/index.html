@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Aprendendo C - formatação do printf &#8211; blog</title>
+<meta name="description" content="">
+<meta name="keywords" content="C, programming, formatacao printf, aprendendo c, tutorial">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Aprendendo C - formatação do printf &#8211; blog">
+<meta property="og:description" content="table {  max-width: 100%;  border-collapse: collapse;  border-spacing: 0;}.table {  width: 100%;  margin-bottom: 18px...">
+<meta property="og:url" content="/aprendendo-c-formatacao-printf-tutorial">
+<meta property="og:site_name" content="blog">
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">blog</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="blog">Home</a>
+            </li>
+            
+            
+                <li><a href="/about" >About</a></li>
+            
+                <li><a href="https://github.com/tarsis" target="_blank">Github</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article">
+
+
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url(/images/typewriter.jpg)"></div>
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>Aprendendo C - formatação do printf</h1>
+            <p class="date">Mar 04, 2012</p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
+    
+        <style type="text/css">
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.table th, .table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table th {
+  font-weight: bold;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+.table thead:first-child tr th, .table thead:first-child tr td {
+  border-top: 0;
+}
+.table tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.table-condensed th, .table-condensed td {
+  padding: 4px 5px;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.table-bordered th + th,
+.table-bordered td + td,
+.table-bordered th + td,
+.table-bordered td + th {
+  border-left: 1px solid #ddd;
+}
+.table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+.table-bordered thead:first-child tr:first-child th:first-child, .table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-radius: 4px 0 0 0;
+  -moz-border-radius: 4px 0 0 0;
+  border-radius: 4px 0 0 0;
+}
+.table-bordered thead:first-child tr:first-child th:last-child, .table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-radius: 0 4px 0 0;
+  -moz-border-radius: 0 4px 0 0;
+  border-radius: 0 4px 0 0;
+}
+.table-bordered thead:last-child tr:last-child th:first-child, .table-bordered tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+}
+.table-bordered thead:last-child tr:last-child th:last-child, .table-bordered tbody:last-child tr:last-child td:last-child {
+  -webkit-border-radius: 0 0 4px 0;
+  -moz-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px 0;
+}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #f5f5f5;
+}
+table .span1 {
+  float: none;
+  width: 44px;
+  margin-left: 0;
+}
+table .span2 {
+  float: none;
+  width: 124px;
+  margin-left: 0;
+}
+table .span3 {
+  float: none;
+  width: 204px;
+  margin-left: 0;
+}
+table .span4 {
+  float: none;
+  width: 284px;
+  margin-left: 0;
+}
+table .span5 {
+  float: none;
+  width: 364px;
+  margin-left: 0;
+}
+table .span6 {
+  float: none;
+  width: 444px;
+  margin-left: 0;
+}
+table .span7 {
+  float: none;
+  width: 524px;
+  margin-left: 0;
+}
+table .span8 {
+  float: none;
+  width: 604px;
+  margin-left: 0;
+}
+table .span9 {
+  float: none;
+  width: 684px;
+  margin-left: 0;
+}
+table .span10 {
+  float: none;
+  width: 764px;
+  margin-left: 0;
+}
+table .span11 {
+  float: none;
+  width: 844px;
+  margin-left: 0;
+}
+table .span12 {
+  float: none;
+  width: 924px;
+  margin-left: 0;
+}
+</style>
+
+<p>Recentemente comecei a aprender C. Sim eu não sei C, não tive na faculdade e sempre senti
+falta de saber melhor como as coisas funionavam por dentro do computador,
+já que minha maior experiencia em programação é com python, que é uma linguagem de altissimo nivel.</p>
+
+<p>Com C voce trabalha mais perto da maquina, direto com bytes, alocação de memoria, tem que fazer as estruturas de dados.</p>
+
+<p>E pra aprender eu escolhi estudar pelo livro Learn C The Hard Way do Zed Shaw.
+É um livro que te instiga a estudar os conceitos por voce mesmo, ensina em cima
+de exemplos bem praticos e eficientes, te adiciona ao ecossistema da linguagem, apresentando ferramentas e tecnicas que vao te ajudar a pensar em C.</p>
+
+<p>Uma das coisas que ele me instigou a estudar foi todos os possiveis formatos e
+suas variações para o printf, a função que escreve na saida padrão (o print do python).</p>
+
+<div class="highlight"><pre><code class="c"><span class="cp">#include &lt;stdio.h&gt;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h4 id="output">output</h4>
+
+<pre><code>Hello World!
+</code></pre>
+
+<blockquote>
+
+</blockquote>
+
+<h3 id="formatando-a-saida-do-printf">formatando a saida do printf</h3>
+
+<p>O printf recebe 2 parametros: uma string com os formatos mapeados e um minimo de valores igual ao mapeado.</p>
+
+<div class="highlight"><pre><code class="c"><span class="cp">#include &lt;stdio.h&gt;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Hello again!&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h4 id="output-1">output</h4>
+
+<pre><code>1 Hello again!
+</code></pre>
+
+<blockquote>
+
+</blockquote>
+
+<p>Esta função é capaz de imprimir diferentes tipos de dados (char, string, int, float, octal, hexa, outros aqui) de acordo com a formatação que voce usar.</p>
+
+<div class="highlight"><pre><code class="c"><span class="cp">#include &lt;stdio.h&gt;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Decimais: %d %ld</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">1988</span><span class="p">,</span> <span class="mi">650000L</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Precedido com espaços em branco: %10d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">1988</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Precedido com zeros: %010d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">1988</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Numeros com base diferente: %d %x %o %#x %#o </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Floats: %4.2f %+.0e %E </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mf">3.14554</span><span class="p">,</span> <span class="mf">3.3214</span><span class="p">,</span> <span class="mf">3.1234</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Truque de tamanho: %*d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h4 id="output-2">output</h4>
+
+<pre><code>Char: b A
+Decimais: 1988 650000
+Precedido com espaços em branco:       1988
+Precedido com zeros: 0000001988
+Numeros com base diferente: 100 64 144 0x64 0144
+Floats: 3.15 +3e+00 3.123400E+00
+Truque de tamanho:    10
+String simples Oi!
+</code></pre>
+
+<h2 id="tabela-de-formatos">Tabela de Formatos</h2>
+
+<pre><code>Os formatos seguem o seguinte padrão: %[flags][tamanho][.precisao][quantidade]formato
+Flags, largura, .precisão, tamanho são opcionais.
+</code></pre>
+
+<h3 id="formatos">Formatos:</h3>
+<table class="table table-bordered"><tbody><tr><th>Formato</th>
+      <th>Saida</th>
+      <th>Exemplo</th>
+    </tr><tr><td>c</td>
+      <td>char</td>
+      <td>a</td>
+    </tr><tr><td>d ou i</td>
+      <td>signed int</td>
+      <td>1</td>
+    </tr><tr><td>e</td>
+      <td>Notação Cientifica usando o caracter e</td>
+      <td>3.9265e+2</td>
+    </tr><tr><td>E</td>
+      <td>Notação Cientifica usando o caracter E</td>
+      <td>3.9265E+2</td>
+    </tr><tr><td>f</td>
+      <td>float</td>
+      <td>3.4</td>
+    </tr><tr><td>g</td>
+      <td>usa o menor numero possivel de f e e</td>
+      <td>3.54</td>
+    </tr><tr><td>G</td>
+      <td>usa o menor numero possivel de f e E</td>
+      <td>3.54</td>
+    </tr><tr><td>o</td>
+      <td>unsigned octal</td>
+      <td>610</td>
+    </tr><tr><td>s</td>
+      <td>string</td>
+      <td>Hello World</td>
+    </tr><tr><td>u</td>
+      <td>unsigned int</td>
+      <td>2345</td>
+    </tr><tr><td>x</td>
+      <td>unsigned hexa</td>
+      <td>7fa</td>
+    </tr><tr><td>X</td>
+      <td>unsigned hexa com letras maiusculas</td>
+      <td>7FA</td>
+    </tr><tr><td>p</td>
+      <td>ponteiro de endereço</td>
+      <td>B800:0000</td>
+    </tr><tr><td>n</td>
+      <td>Nada impresso. O argumento deve ser um ponteiro para um int assinado, onde o número de caracteres escritos até então é armazenado.</td>
+      <td></td>
+    </tr><tr><td>%</td>
+      <td>% seguido de outro % irá printar % na saida</td>
+      <td>%</td>
+    </tr></tbody></table>
+
+<h3 id="flags">Flags</h3>
+<table class="table table-bordered"><tbody><!-- Results table headers --><tr><th>Flag</th>
+      <th>Descrição</th>
+    </tr><tr><td>-</td>
+      <td>Alinhado a esquerda dentro do tamanho definido. Alinhamento a direita é o padrão (veja a tabela de formatação de tamanho).</td>
+    </tr><tr><td>+</td>
+      <td>Força a o resultado ser mostrado com um simbolo de + ou -. Por padrão, somente numeros negativos são mostrados com -.</td>
+    </tr><tr><td>#</td>
+      <td>Usado com o, x e X indica que o valor será precedido de 0, 0x ou 0X  respectivamente, para valores diferentes de 0.<br />Usado com e, E e f, força o output para mostrar um ponto decimal mesmo sem numeros depois dele. Por padrão, se nenhum numero estiver depois do ponto decimal ele nao é mostrado.<br />Usado com g e G o resultado é mostrado com zeros a direita.</td>
+    </tr><tr><td>0</td>
+      <td>Numero 0 é printado ao invés de espaços em branco quando o tamanho é especificado. (veja a tabela de formatação de tamanho).</td>
+    </tr></tbody></table>
+
+<h3 id="modificadores-de-tamanho">Modificadores de Tamanho</h3>
+<table class="table table-bordered"><tbody><!-- Results table headers --><tr><th>Tamanho</th>
+      <th>Descrição</th>
+    </tr><tr><td>(Numero)</td>
+      <td>Número minimo de caracteres a serem printados. Se o valor a ser printado for menor que o numero, será adicionado espaços em branco para atigir o numero limite. O valor nao é trucado caso seja maior que o limite.</td>
+    </tr><tr><td>*</td>
+      <td>O tamanho nao é especificado na formatação da string, mas é passado como argumento precedendo o argumento a ser formatado</td>
+    </tr></tbody></table>
+
+<h3 id="modificadores-de-preciso">Modificadores de precisão</h3>
+<table class="table table-bordered"><tbody><!-- Results table headers --><tr><th>.precisão</th>
+      <th>Descrição</th>
+    </tr><tr><td>.numero</td>
+      <td>Para formatos inteiros (i, d, u, o, x, X): precisão especifica o numero minimo de digitos a serem mostrados. Se a quantidade de digitos for menor que o limite, entao serão acrescentados zeros ao final. O valor nao é truncado se a quantidade de digitos for maior que o limite.  Precisão 0 significa que o nenhum valor é printado se o numero for 0.<br /><br />Para formatos e, E, f: é o numero de digitos que serão mostrados depois do ponto decimal.<br /><br />Para formatos g e G: é o numero maximo de digitos significantes a serem mostrados.<br /><br />Para s: é o numero maximo de caracteres a serem mostrados. Por padrão, todos os caracteres serão mostrados até o caracter nulo que finaliza uma string (por exemplo \n)<br /><br />Para c: não tem efeito.<br /><br />Quando nenhuma precisão é especificada, o padrão é 1. Se o periodo é especificado sem um valor explicito para precisão, 0 é assumido.</td>
+    </tr><tr><td>.*</td>
+      <td>A precisão nao é especificada na formatação da string, mas é passado como argumento precedendo o argumento a ser formatado.</td>
+    </tr></tbody></table>
+
+<h3 id="modificadores-de-quantidade">Modificadores de quantidade</h3>
+<table class="table table-bordered"><tbody><!-- Results table headers --><tr><th>quantidade</th>
+      <th>Descrição</th>
+    </tr><tr><td>h</td>
+      <td>O argumento é interpretado como um short int ou unsigned short int (só se aplica aos formatadores de inteiro: i, d, o,  u,  x,  X).</td>
+    </tr><tr><td>l</td>
+      <td>O argumento é interpretado como um long int ou unsigned long int (só se aplica aos formatadores de inteiro: i, d, o,  u,  x,  X) e como um caractere de largura ou cadeia de caracteres de largura para formatadores c e s.</td>
+    </tr><tr><td>L</td>
+      <td>O argumento é interpretado como um long double (somente para formatadores de float: e, E, f, g e G).<br /></td>
+    </tr></tbody></table>
+
+<p>O <code>printf</code> é muito poderoso, e espero ter ajudado a conhece-lo melhor.</p>
+
+<p>Obrigado, até a proxima!</p>
+
+          
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Aprendendo C - formatação do printf&quot;%20%20via%20&#64;tarsisazevedo" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+
+
+      </article>
+
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/review-pro-git" title="[review] Pro Git">[review] Pro Git </a></span>
+              <span class="date">Mar 15, 2012</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/aprendendo-c-formatacao-printf-tutorial" title="Aprendendo C - formatação do printf">Aprendendo C - formatação d... </a></span>
+              <span class="date">Mar 04, 2012</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/syntax-highlight-no-blog-js-css" title="[dica rapida] syntax hightlight no seu blog com javascript">[dica rapida] syntax hightl... </a></span>
+              <span class="date">Feb 29, 2012</span>
+            </li>
+        
+      </ol>
+      
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:tarsis.azevedo@gmail.com"><span class="foot-link">Contact Me</span></a></li>
+            
+             
+            <li><a id="twit" href="http://twitter.com/tarsisazevedo" target="_blank"><span class="foot-link">@tarsisazevedo</span></a></li> 
+            
+            
+            
+            
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2013 Tarsis Azevedo. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="/assets/js/scripts.js"></script>
+  
+
+  </body>
+</html>

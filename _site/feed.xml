@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">blog</title>
+<subtitle type="text">A beautiful theme.</subtitle>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2013-09-01T23:26:08-03:00</updated>
+<id>/</id>
+<author>
+  <name>Tarsis Azevedo</name>
+  <uri>/</uri>
+  <email>tarsis.azevedo@gmail.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[[review] Pro Git]]></title>
+  <link rel="alternate" type="text/html" href="/review-pro-git" />
+  <id>/review-pro-git</id>
+  <published>2012-03-15T00:00:00-03:00</published>
+  <updated>2012-03-15T00:00:00-03:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Pro Git é um livro muito bom se voce ja conhece um pouco de git e quer se aprofundar mais, ou se voce nao conhece e quer conhecer bem.&lt;/p&gt;
+
+&lt;p&gt;Nele voce vai aprender sobre controle de versao distribuido, workflows para melhor utilização dos recursos do git, melhores praticas com git. Alem disso voce aprenderá a instalar e configurar um servidor git, a como gerenciar e colaborar com projetos e inclusive a extender o git.&lt;/p&gt;
+
+&lt;p&gt;O livro pode ser lido capitulo por capitulo se voce nao sabe nada sobre Controle de versao distribuido. Ou voce pode ler somente os capitulos que lhe interessam, se voce ja tem um conhecimento basico do git.&lt;/p&gt;
+
+&lt;p&gt;Onde Comprar?&lt;/p&gt;
+
+&lt;p&gt;Na amazon.&lt;/p&gt;
+
+&lt;p&gt;Ou voce pode ler no proprio site do livro. Ou voce pode baixar do github.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/review-pro-git&quot;&gt;[review] Pro Git&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on March 15, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Aprendendo C - formatação do printf]]></title>
+  <link rel="alternate" type="text/html" href="/aprendendo-c-formatacao-printf-tutorial" />
+  <id>/aprendendo-c-formatacao-printf-tutorial</id>
+  <published>2012-03-04T00:00:00-03:00</published>
+  <updated>2012-03-04T00:00:00-03:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;style type=&quot;text/css&quot;&gt;
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.table th, .table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table th {
+  font-weight: bold;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+.table thead:first-child tr th, .table thead:first-child tr td {
+  border-top: 0;
+}
+.table tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.table-condensed th, .table-condensed td {
+  padding: 4px 5px;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.table-bordered th + th,
+.table-bordered td + td,
+.table-bordered th + td,
+.table-bordered td + th {
+  border-left: 1px solid #ddd;
+}
+.table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+.table-bordered thead:first-child tr:first-child th:first-child, .table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-radius: 4px 0 0 0;
+  -moz-border-radius: 4px 0 0 0;
+  border-radius: 4px 0 0 0;
+}
+.table-bordered thead:first-child tr:first-child th:last-child, .table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-radius: 0 4px 0 0;
+  -moz-border-radius: 0 4px 0 0;
+  border-radius: 0 4px 0 0;
+}
+.table-bordered thead:last-child tr:last-child th:first-child, .table-bordered tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+}
+.table-bordered thead:last-child tr:last-child th:last-child, .table-bordered tbody:last-child tr:last-child td:last-child {
+  -webkit-border-radius: 0 0 4px 0;
+  -moz-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px 0;
+}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #f5f5f5;
+}
+table .span1 {
+  float: none;
+  width: 44px;
+  margin-left: 0;
+}
+table .span2 {
+  float: none;
+  width: 124px;
+  margin-left: 0;
+}
+table .span3 {
+  float: none;
+  width: 204px;
+  margin-left: 0;
+}
+table .span4 {
+  float: none;
+  width: 284px;
+  margin-left: 0;
+}
+table .span5 {
+  float: none;
+  width: 364px;
+  margin-left: 0;
+}
+table .span6 {
+  float: none;
+  width: 444px;
+  margin-left: 0;
+}
+table .span7 {
+  float: none;
+  width: 524px;
+  margin-left: 0;
+}
+table .span8 {
+  float: none;
+  width: 604px;
+  margin-left: 0;
+}
+table .span9 {
+  float: none;
+  width: 684px;
+  margin-left: 0;
+}
+table .span10 {
+  float: none;
+  width: 764px;
+  margin-left: 0;
+}
+table .span11 {
+  float: none;
+  width: 844px;
+  margin-left: 0;
+}
+table .span12 {
+  float: none;
+  width: 924px;
+  margin-left: 0;
+}
+&lt;/style&gt;
+
+&lt;p&gt;Recentemente comecei a aprender C. Sim eu não sei C, não tive na faculdade e sempre senti
+falta de saber melhor como as coisas funionavam por dentro do computador,
+já que minha maior experiencia em programação é com python, que é uma linguagem de altissimo nivel.&lt;/p&gt;
+
+&lt;p&gt;Com C voce trabalha mais perto da maquina, direto com bytes, alocação de memoria, tem que fazer as estruturas de dados.&lt;/p&gt;
+
+&lt;p&gt;E pra aprender eu escolhi estudar pelo livro Learn C The Hard Way do Zed Shaw.
+É um livro que te instiga a estudar os conceitos por voce mesmo, ensina em cima
+de exemplos bem praticos e eficientes, te adiciona ao ecossistema da linguagem, apresentando ferramentas e tecnicas que vao te ajudar a pensar em C.&lt;/p&gt;
+
+&lt;p&gt;Uma das coisas que ele me instigou a estudar foi todos os possiveis formatos e
+suas variações para o printf, a função que escreve na saida padrão (o print do python).&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;%s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;output&quot;&gt;output&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;Hello World!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;formatando-a-saida-do-printf&quot;&gt;formatando a saida do printf&lt;/h3&gt;
+
+&lt;p&gt;O printf recebe 2 parametros: uma string com os formatos mapeados e um minimo de valores igual ao mapeado.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;%d %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Hello again!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;output-1&quot;&gt;output&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;1 Hello again!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta função é capaz de imprimir diferentes tipos de dados (char, string, int, float, octal, hexa, outros aqui) de acordo com a formatação que voce usar.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Decimais: %d %ld&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1988&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;650000L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Precedido com espaços em branco: %10d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1988&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Precedido com zeros: %010d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1988&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Numeros com base diferente: %d %x %o %#x %#o &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Floats: %4.2f %+.0e %E &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.14554&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.3214&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.1234&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Truque de tamanho: %*d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;output-2&quot;&gt;output&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;Char: b A
+Decimais: 1988 650000
+Precedido com espaços em branco:       1988
+Precedido com zeros: 0000001988
+Numeros com base diferente: 100 64 144 0x64 0144
+Floats: 3.15 +3e+00 3.123400E+00
+Truque de tamanho:    10
+String simples Oi!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;tabela-de-formatos&quot;&gt;Tabela de Formatos&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;Os formatos seguem o seguinte padrão: %[flags][tamanho][.precisao][quantidade]formato
+Flags, largura, .precisão, tamanho são opcionais.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;formatos&quot;&gt;Formatos:&lt;/h3&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;Formato&lt;/th&gt;
+      &lt;th&gt;Saida&lt;/th&gt;
+      &lt;th&gt;Exemplo&lt;/th&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;c&lt;/td&gt;
+      &lt;td&gt;char&lt;/td&gt;
+      &lt;td&gt;a&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;d ou i&lt;/td&gt;
+      &lt;td&gt;signed int&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;e&lt;/td&gt;
+      &lt;td&gt;Notação Cientifica usando o caracter e&lt;/td&gt;
+      &lt;td&gt;3.9265e+2&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;E&lt;/td&gt;
+      &lt;td&gt;Notação Cientifica usando o caracter E&lt;/td&gt;
+      &lt;td&gt;3.9265E+2&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;f&lt;/td&gt;
+      &lt;td&gt;float&lt;/td&gt;
+      &lt;td&gt;3.4&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;g&lt;/td&gt;
+      &lt;td&gt;usa o menor numero possivel de f e e&lt;/td&gt;
+      &lt;td&gt;3.54&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;G&lt;/td&gt;
+      &lt;td&gt;usa o menor numero possivel de f e E&lt;/td&gt;
+      &lt;td&gt;3.54&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;o&lt;/td&gt;
+      &lt;td&gt;unsigned octal&lt;/td&gt;
+      &lt;td&gt;610&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;s&lt;/td&gt;
+      &lt;td&gt;string&lt;/td&gt;
+      &lt;td&gt;Hello World&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;u&lt;/td&gt;
+      &lt;td&gt;unsigned int&lt;/td&gt;
+      &lt;td&gt;2345&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;x&lt;/td&gt;
+      &lt;td&gt;unsigned hexa&lt;/td&gt;
+      &lt;td&gt;7fa&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;X&lt;/td&gt;
+      &lt;td&gt;unsigned hexa com letras maiusculas&lt;/td&gt;
+      &lt;td&gt;7FA&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;p&lt;/td&gt;
+      &lt;td&gt;ponteiro de endereço&lt;/td&gt;
+      &lt;td&gt;B800:0000&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;n&lt;/td&gt;
+      &lt;td&gt;Nada impresso. O argumento deve ser um ponteiro para um int assinado, onde o número de caracteres escritos até então é armazenado.&lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%&lt;/td&gt;
+      &lt;td&gt;% seguido de outro % irá printar % na saida&lt;/td&gt;
+      &lt;td&gt;%&lt;/td&gt;
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;flags&quot;&gt;Flags&lt;/h3&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;&lt;tbody&gt;&lt;!-- Results table headers --&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;
+      &lt;th&gt;Descrição&lt;/th&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;Alinhado a esquerda dentro do tamanho definido. Alinhamento a direita é o padrão (veja a tabela de formatação de tamanho).&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+&lt;/td&gt;
+      &lt;td&gt;Força a o resultado ser mostrado com um simbolo de + ou -. Por padrão, somente numeros negativos são mostrados com -.&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;#&lt;/td&gt;
+      &lt;td&gt;Usado com o, x e X indica que o valor será precedido de 0, 0x ou 0X  respectivamente, para valores diferentes de 0.&lt;br /&gt;Usado com e, E e f, força o output para mostrar um ponto decimal mesmo sem numeros depois dele. Por padrão, se nenhum numero estiver depois do ponto decimal ele nao é mostrado.&lt;br /&gt;Usado com g e G o resultado é mostrado com zeros a direita.&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;Numero 0 é printado ao invés de espaços em branco quando o tamanho é especificado. (veja a tabela de formatação de tamanho).&lt;/td&gt;
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;modificadores-de-tamanho&quot;&gt;Modificadores de Tamanho&lt;/h3&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;&lt;tbody&gt;&lt;!-- Results table headers --&gt;&lt;tr&gt;&lt;th&gt;Tamanho&lt;/th&gt;
+      &lt;th&gt;Descrição&lt;/th&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;(Numero)&lt;/td&gt;
+      &lt;td&gt;Número minimo de caracteres a serem printados. Se o valor a ser printado for menor que o numero, será adicionado espaços em branco para atigir o numero limite. O valor nao é trucado caso seja maior que o limite.&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;O tamanho nao é especificado na formatação da string, mas é passado como argumento precedendo o argumento a ser formatado&lt;/td&gt;
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;modificadores-de-preciso&quot;&gt;Modificadores de precisão&lt;/h3&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;&lt;tbody&gt;&lt;!-- Results table headers --&gt;&lt;tr&gt;&lt;th&gt;.precisão&lt;/th&gt;
+      &lt;th&gt;Descrição&lt;/th&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;.numero&lt;/td&gt;
+      &lt;td&gt;Para formatos inteiros (i, d, u, o, x, X): precisão especifica o numero minimo de digitos a serem mostrados. Se a quantidade de digitos for menor que o limite, entao serão acrescentados zeros ao final. O valor nao é truncado se a quantidade de digitos for maior que o limite.  Precisão 0 significa que o nenhum valor é printado se o numero for 0.&lt;br /&gt;&lt;br /&gt;Para formatos e, E, f: é o numero de digitos que serão mostrados depois do ponto decimal.&lt;br /&gt;&lt;br /&gt;Para formatos g e G: é o numero maximo de digitos significantes a serem mostrados.&lt;br /&gt;&lt;br /&gt;Para s: é o numero maximo de caracteres a serem mostrados. Por padrão, todos os caracteres serão mostrados até o caracter nulo que finaliza uma string (por exemplo \n)&lt;br /&gt;&lt;br /&gt;Para c: não tem efeito.&lt;br /&gt;&lt;br /&gt;Quando nenhuma precisão é especificada, o padrão é 1. Se o periodo é especificado sem um valor explicito para precisão, 0 é assumido.&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;.*&lt;/td&gt;
+      &lt;td&gt;A precisão nao é especificada na formatação da string, mas é passado como argumento precedendo o argumento a ser formatado.&lt;/td&gt;
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;modificadores-de-quantidade&quot;&gt;Modificadores de quantidade&lt;/h3&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;&lt;tbody&gt;&lt;!-- Results table headers --&gt;&lt;tr&gt;&lt;th&gt;quantidade&lt;/th&gt;
+      &lt;th&gt;Descrição&lt;/th&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;h&lt;/td&gt;
+      &lt;td&gt;O argumento é interpretado como um short int ou unsigned short int (só se aplica aos formatadores de inteiro: i, d, o,  u,  x,  X).&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;l&lt;/td&gt;
+      &lt;td&gt;O argumento é interpretado como um long int ou unsigned long int (só se aplica aos formatadores de inteiro: i, d, o,  u,  x,  X) e como um caractere de largura ou cadeia de caracteres de largura para formatadores c e s.&lt;/td&gt;
+    &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;L&lt;/td&gt;
+      &lt;td&gt;O argumento é interpretado como um long double (somente para formatadores de float: e, E, f, g e G).&lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;O &lt;code&gt;printf&lt;/code&gt; é muito poderoso, e espero ter ajudado a conhece-lo melhor.&lt;/p&gt;
+
+&lt;p&gt;Obrigado, até a proxima!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/aprendendo-c-formatacao-printf-tutorial&quot;&gt;Aprendendo C - formatação do printf&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on March 04, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[[dica rapida] syntax hightlight no seu blog com javascript]]></title>
+  <link rel="alternate" type="text/html" href="/syntax-highlight-no-blog-js-css" />
+  <id>/syntax-highlight-no-blog-js-css</id>
+  <published>2012-02-29T00:00:00-03:00</published>
+  <updated>2012-02-29T00:00:00-03:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;se voce tem um blog sobre programação, provavelmente voce postará snippets de codigo e provavelmente voce vai querer que esse snippet tenha syntax highlight como no seu editor de codigo preferido.&lt;/p&gt;
+
+&lt;p&gt;mas como faz?&lt;/p&gt;
+
+&lt;p&gt;é bem facil, basta voce usar um modulo JS e CSS chamado google code prettify.&lt;/p&gt;
+
+&lt;p&gt;para cofigura-lo na pagina. basta voce colocar esses 2 links no seu html.&lt;/p&gt;
+
+&lt;link href=&quot;prettify.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;prettify.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;e depois chamar uma função no load da pagina.&lt;/p&gt;
+
+&lt;p&gt;$(function() {prettyPrint();});&lt;/p&gt;
+
+&lt;p&gt;obs: para chama-lo assim voce deve carregar o jquery na pagina.&lt;/p&gt;
+
+&lt;p&gt;obs 2: mais informaçoes de configuração, veja o readme. do projeto.&lt;/p&gt;
+
+&lt;p&gt;e agora?&lt;/p&gt;
+
+&lt;p&gt;basta voce colocar seu codigo dentro de uma tag code ou pre com a classe prettyprint e pronto, seu codigo vai ficar bonito na pagina!&lt;/p&gt;
+
+&lt;p&gt;um exemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;prettyprint&quot;&gt;print &quot;Hello World!&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;é isso, até mais!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/syntax-highlight-no-blog-js-css&quot;&gt;[dica rapida] syntax hightlight no seu blog com javascript&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on February 29, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[[Review] Nao me faça pensar! Uma Abordagem de Bom Senso À Usabilidade na Web]]></title>
+  <link rel="alternate" type="text/html" href="/livro-nao-me-faca-pensar" />
+  <id>/livro-nao-me-faca-pensar</id>
+  <published>2012-02-08T00:00:00-02:00</published>
+  <updated>2012-02-08T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Eu recentemente acabei de ler este livro sensacional sobre usabilidade na web.&lt;/p&gt;
+
+&lt;p&gt;Ele trata sobre a arquitetura de informação de uma pagina web, mostrando elementos básicos que toda pagina deve ter, o que fazer e o que não fazer, como montar sua pagina principal e como executar testes de usabilidade. Te abre os olhos pra questões básicas muitas vezes esquecidas por nós em nossos projetos web.&lt;/p&gt;
+
+&lt;p&gt;Mas eu sou desenvolvedor!&lt;/p&gt;
+
+&lt;p&gt;Por isso mesmo! Você deve ser plural, conhecer um pouco de tudo. Design, infraestrutura, usabilidade, CSS, HTML, semantica, protocolo http e todo o ecosistema que engloba a web.&lt;/p&gt;
+
+&lt;p&gt;Neste otimo post o Henrique Bastos fala mais sobre pluralidade para programadores web. Vale a leitura!&lt;/p&gt;
+
+&lt;p&gt;Se você quiser ler somente um livro sobre usabilidade na sua vida, LEIA ESTE!&lt;/p&gt;
+
+&lt;p&gt;Ok, legal. Onde eu compro?&lt;/p&gt;
+
+&lt;p&gt;Voce pode escolher o melhor preço no buscapé, por esse link.&lt;/p&gt;
+
+&lt;p&gt;Ou se preferir, pode comprar a versao em ingles, na amazon.&lt;/p&gt;
+
+&lt;p&gt;Pode ter certeza, este livro é um otimo investimento para melhorar seus projetos web, e deixar seus usuarios mais felizes! Aproveite e boa leitura.&lt;/p&gt;
+
+&lt;p&gt;Até a proxima!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/livro-nao-me-faca-pensar&quot;&gt;[Review] Nao me faça pensar! Uma Abordagem de Bom Senso À Usabilidade na Web&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on February 08, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Testes em Javascript - Jasmine]]></title>
+  <link rel="alternate" type="text/html" href="/teste-javascript-jasmine" />
+  <id>/teste-javascript-jasmine</id>
+  <published>2012-02-01T00:00:00-02:00</published>
+  <updated>2012-02-01T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Testes automatizados emergiram como uma das boas praticas da engenharia de software, e seus resultados sao comprovadamente eficazes.&lt;/p&gt;
+
+&lt;p&gt;Eu utilizo bastante essas tecnicas quando programo em python/django com ferramentas como o splinter, unittest entre outras. Porem quando programava em javacript, eu sempre senti falta desses testes automatizados.&lt;/p&gt;
+
+&lt;p&gt;E o Jasmine?&lt;/p&gt;
+
+&lt;p&gt;tl;dr - Jasmine is a behavior-driven development framework for testing your JavaScript code.
+  It does not depend on any other JavaScript frameworks.
+  It does not require a DOM.
+  And it has a clean, obvious syntax so that you can easily write tests.&lt;/p&gt;
+
+&lt;p&gt;Em setembro do ano passado (2011), comecei a trabalhar no projeto de cobertura de eventos na globo.com. E tinhamos como desafio principal, atualizar uma pagina em tempo real via streaming com fotos, videos e textos. Pra isso os componentes da pagina teriam que interagir muito, recebendo e tratando os dados enviados do streaming. Usamos muito js com o framework mootools, e pra testar usamos o jasmine, o que nos proporcionou uma segurança e qualidade de codigo excelentes!&lt;/p&gt;
+
+&lt;p&gt;Agora chega de falar!&lt;/p&gt;
+
+&lt;p&gt;Show me the code&lt;/p&gt;
+
+&lt;p&gt;Pra começar, vc descreve um cenario que vai testar.&lt;/p&gt;
+
+&lt;p&gt;Como exemplo, vamos fazer um fizzbuzz&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Fizz Buzz&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fizzbuzz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;fizz&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Depois de escrever o teste, a gente escreve um codigo pra passar:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fizzbuzz&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Agora mais um cenario:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;numero igual a cinco, deve retornar buzz&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;mais um pouco de codigo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fizzbuzz&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fizz&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Bom ai vcs podem continuar a brincar e terminar o codigo.&lt;/p&gt;
+
+&lt;p&gt;E pra rodar?&lt;/p&gt;
+
+&lt;p&gt;Bom vc pode carregar os scripts(download aqui) do jasmine numa pagina html estatica e por ultimo carregar o seu teste.
+Um exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML PUBLIC &amp;quot;-//W3C//DTD HTML 4.01 Transitional//EN&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;  &amp;quot;http://www.w3.org/TR/html4/loose.dtd&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Jasmine Test Runner&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;lib/jasmine-1.0.2/jasmine.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;lib/jasmine-1.1.0/jasmine.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;arquivo/de/teste.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;jasmine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addReporter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jasmine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;TrivialReporter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;jasmine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Se vc tem um projeto em ruby com rails, vc pode usar uma gem pra rodar os testes.&lt;/p&gt;
+
+&lt;p&gt;Se vc tem um projeto em python, pode usar o jasmine-test-runner, feito pelo cobrateam.&lt;/p&gt;
+
+&lt;p&gt;Se vc tem um projeto em outra linguagem, veja aqui como rodar o jasmine.&lt;/p&gt;
+
+&lt;p&gt;Entao é isso!&lt;/p&gt;
+
+&lt;p&gt;Até a proxima, []’s&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/teste-javascript-jasmine&quot;&gt;Testes em Javascript - Jasmine&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on February 01, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Vagrant - Maquinas virtuais leves e rapidas]]></title>
+  <link rel="alternate" type="text/html" href="/vagrant-maquinas-virtuais-leves-e-rapidas" />
+  <id>/vagrant-maquinas-virtuais-leves-e-rapidas</id>
+  <published>2012-01-26T00:00:00-02:00</published>
+  <updated>2012-01-26T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Se voce é programador e precisa subir maquinas virtuais pra testar sites no IE 6/7/8/9, ou quer fazer deploy para ambientes iguais os de produção, e pra mais varias coisas que precisam ser rapidas e são mega chatas e demoradas, e voce usa VirtualBox – Voce esta fazendo isso errado.
+Ok, entao eu uso o que?
+O vagrant é uma ferramenta para a construção e distribuição de ambientes dedesenvolvimento virtualizados, escrita em ruby que usa o VirtualBox da Oracle como base, e prove funcionalidades que permitem criar, distribuir, reproduzir e configurar Maquinas Virtuais(VM) de forma rapida (fonte: github do projeto).
+ComoFas
+Como eu disse anterior mente é muito facil, basta ter o ruby, e a virtualbox instalada, uma internet boa ajuda tambem.
+Tendo isso instalado vamos começar:
+Execute esse comando:&lt;/p&gt;
+
+&lt;p&gt;$ gem install vagrant&lt;/p&gt;
+
+&lt;p&gt;Certifique-se que tudo está instalado corretamente.
+Antes de criar sua maquina, crie uma pasta para abrigar os arquivos de configuraçao:&lt;/p&gt;
+
+&lt;p&gt;$ mkdir vagrant-machine&lt;/p&gt;
+
+&lt;p&gt;Agora vamos criar uma VM com ubuntu 10.04&lt;/p&gt;
+
+&lt;p&gt;$ cd vagrant-machine $ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box $ vagrant init lucid32 $ vagrant up&lt;/p&gt;
+
+&lt;p&gt;Feito isso sua VM ja está pronta para ser acessada!
+Mas é só isso mesmo?!
+Claro que nao!!! Agora vamos configurar seu ambiente! Primeiro, abra o arquivo Vagrantfile na pasta vagrant-machine e deixe ele assim:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vagrant::Config.run do&lt;/td&gt;
+      &lt;td&gt;config&lt;/td&gt;
+      &lt;td&gt;# Setup the box config.vm.box = “lucid32” end&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Execute o comando de reload para carregar suas modificações&lt;/p&gt;
+
+&lt;p&gt;$ vagrant reload&lt;/p&gt;
+
+&lt;p&gt;Teste o acesso a sua VM para ver se está funcionando corretamente&lt;/p&gt;
+
+&lt;p&gt;$ vagrant ssh&lt;/p&gt;
+
+&lt;p&gt;OBS: Tudo que voce colocar na pasta onde está seu Vagrantfile, aparecerá na VM na pasta /vagrant. Para ter certeza, execute este comando na VM:&lt;/p&gt;
+
+&lt;p&gt;$ ls /vagrant&lt;/p&gt;
+
+&lt;p&gt;Agora acabou?
+Bom agora voce tem que instalar os pacotes que voce precisa no seu ambiente. Para isso eu escolhi usar o chef para gerenciar a instalação. Esse processo depende muito do seu ambiente, entao deixarei referencias para montagem de ambientes usando o chef.
+Para estudar o vagrant e o chef eu fiz uma VM configurada para ser um servidor de CI
+Nela estao instalados os seguintes pacotes: * Django 1.3 * Apache * git * MySql * Jenkins (servidor de CI)
+Download aqui
+OBS: Execute a VM e acesse o servidor de CI pela url http://localhost:8080/
+Referencias:
+Tutorial em ingles
+Using vagrant as a Team
+Video Tutorial
+Making CI easier to do than not to with Hudson CI and Vagrant
+Chef Docs
+Using vagrant for you web development
+Bom, é isso, divirtam-se com suas novas VMs rapidas e praticas.
+Duvidas e criticas, deixem nos comentarios.
+Até a proxima&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/vagrant-maquinas-virtuais-leves-e-rapidas&quot;&gt;Vagrant - Maquinas virtuais leves e rapidas&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on January 26, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Truque Ssh: Sem Senha]]></title>
+  <link rel="alternate" type="text/html" href="/truque-ssh-sem-senha" />
+  <id>/truque-ssh-sem-senha</id>
+  <published>2012-01-26T00:00:00-02:00</published>
+  <updated>2012-01-26T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Voce tem que acessar um servidor muitas vezes ao dia, e esta cansado de digitar senha toda hora? Voce nao aguenta mais gravar mil senhas? Tem que digitar todas as mil senhas para tentar acessar sua maquina remota?  Seus problemas acabaram!!!  Voce só vai precisar de:  Um terminal linux  Senha da maquina que vc acessa (E só mais uma vez, eu garanto)  Alguns comandos linux.   Atenção: se voce nao é muito experiente em linux, peça ajuda de um adulto xD,    Tudo pronto? Entao…    Abra o terminal e digite:    ssh-keygen -t rsa      Bom agora voce vai ver as seguintes mensagens:    Enter file in which to save the key (/home/user1/.ssh/id_rsa):  Enter passphrase (empty for no passphrase):  Enter same passphrase again:       APENAS TECLE ENTER PARA TODAS!!!!    Agora faça o seguinte:    scp ~/.ssh/id_rsa.pub root@sua_maquina_remota:~      Se isso deu certo, agora acesse sua maquina:    ssh root@sua_maquina_remota      Estando na maquina faça o seguinte:    cat id_rsa.pub » .ssh/authorized_keys    Se o diretorio .ssh nao existir, crie-o assim: mkdir .ssh    Feito isso, apenas saia da maquina remota e tente acessar novamente.  Agora voce nao precisa mais de senhas!!!    Porem…  Existe uma lei do universo que diz o seguinte: se algo pode dar errado, vai dar errado, entao…  Se depois de seguir todos esses passos, voce encontrar com esse erro:          “agent admitted failure to sign using the key”         Basta fazer o seguinte na maquina local, nao na maquina remota:         sudo apt-get install ssh-add      Por fim..  deixe seu feedback(problemas, sugestoes, etc) nos comentarios.    Obrigado, e até a proxima pessoal!    Referencias:  http://polishlinux.org/apps/ssh-tricks/  http://www.pedropereira.net/ssh-sem-senha-autenticacao-atraves-de-certificados-rsa/  http://www.baptiste-wicht.com/2010/07/tip-how-to-solve-agent-admitted-failure-to-sign-using-the-key-error/&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/truque-ssh-sem-senha&quot;&gt;Truque Ssh: Sem Senha&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on January 26, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Scaling Rails - Dicas simples que podem salvar sua vida!]]></title>
+  <link rel="alternate" type="text/html" href="/scaling-rails-dicas-simples-que-podem-salvar-sua" />
+  <id>/scaling-rails-dicas-simples-que-podem-salvar-sua</id>
+  <published>2012-01-26T00:00:00-02:00</published>
+  <updated>2012-01-26T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Todo dia, toda hora alguém levanta a mesma questão: Rails escala? Djángo escala? &lt;seu framework=&quot;&quot; preferido=&quot;&quot;&gt; escala?Se você ainda faz essas perguntas, fique sabendo que se sua aplicação não escala, a culpa é toda sua provavelmente você esta fazendo merda algo de errado.Ok, já que você disse, o que posso fazer pra melhorar?!O Gregg Pollack, criou uma seria de vídeocasts dando dicas super rápidas e simples para escalar uma aplicação rails. =&amp;gt; VEJA OS VIDEOCAST AQUI &amp;lt;=São dicas como, page cache, expiration, load tests e mais outras coisas legais que podem ser aplicadas facilmente e rapidamente em qualquer projeto rails.Para django, existe essa thread no StackOverflow que explica varias formas de escalar uma aplicação djangoLegal, mas eu trabalho com outro frameworkEssas dicas podem ser aplicadas em quase todas as linguagens e frameworks. Basta fazer o paralelo entre a ferramenta mostrada no vídeo&lt;/seu&gt;&lt;/td&gt;
+      &lt;td&gt;thread e uma similar que pode ser usada com seu framework.Uma simpless pesquisa no google já traz sua resposta!     Se tiver outra indicaçao de material, ou dica, deixa ai nos comentarios,  Thanks.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/scaling-rails-dicas-simples-que-podem-salvar-sua&quot;&gt;Scaling Rails - Dicas simples que podem salvar sua vida!&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on January 26, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[FISL 12 - A segunda vez é ainda melhor]]></title>
+  <link rel="alternate" type="text/html" href="/fisl-12-a-segunda-vez-e-ainda-melhor" />
+  <id>/fisl-12-a-segunda-vez-e-ainda-melhor</id>
+  <published>2012-01-26T00:00:00-02:00</published>
+  <updated>2012-01-26T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Na ultima semana rolou em Porto Alegre mais um FISL na PUC. Foram 4 dias conhecendo e conversando com muita gente, revendo amigos, comendo muito churrasco e sentindo muito frio!
+Esse foi meu segundo FISL, e como dizem: a segunda vez é ainda melhor!
+Fiquei grande parte do tempo no stand da globo.com, conversando com pessoas da comunidade python, conhecendo gente de todo brasil e fazendo novas amizades. Tive contato com muitos alunos e futuros programadores, uns mais interessados e outros só querendo brindes xD
+No stand da globo.com apresentei uma lightning talk sobre Coding Dojo e convidei a galera para participar de um dojo no sabado a tarde!
+ &lt;/p&gt;
+
+&lt;p&gt;E apareceram mais pessoas que eu esperava.
+Junto com o Israel Teixeira, do dojorio, guiamos um dojo em python colocando em pratica os conceitos de TDD aprensentados por ele na sua palestra. O codigo e o feeback estao no github.
+Tambem nesse FISL tive a oportunidade de apresentar minha primeira palestra em um grande evento, e o resultado nao poderia ser melhor!
+Sala cheia, muitas perguntas e elogios.&lt;/p&gt;
+
+&lt;p&gt;Esse FISL foi inesquecivel, agora que venha a QCON Br e a Python Brasil! Nos vemos lá!
+ps: veja o que o Henrique Bastos tem a dizer sobre o FISL 12!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/fisl-12-a-segunda-vez-e-ainda-melhor&quot;&gt;FISL 12 - A segunda vez é ainda melhor&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on January 26, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[development |should| be_funny - Python e TDD]]></title>
+  <link rel="alternate" type="text/html" href="/development-should-be-funny-python-e-tdd" />
+  <id>/development-should-be-funny-python-e-tdd</id>
+  <published>2012-01-26T00:00:00-02:00</published>
+  <updated>2012-01-26T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Should o que?!
+O should-dsl é uma ferramenta de teste que tem como principal objetivo tornar o codigo mais legivel e limpo. (http://www.should-dsl.info/)
+Ok, mas #comofas?
+Depois de instalado (o site ensina como fazer) é bem simples começar a escrever os testes. Tá duvidando, então olha só:
+Esse exemplo eh a implementacao das specs da musica Só para Loucos – Ventania
+So Para Loucos Spec Spec&lt;/p&gt;
+
+&lt;p&gt;class Pessoa:
+		louco = False
+		careta = True&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;	def colher_cogumelos(self):
+	    self.cogumelos = [''cogumelo1'', ''cogumelo2'', ''cogumelo3'', ''cogumelo4'', ''cogumelo5'']
+	    return self.cogumelos
+
+	def fazer_cha(self, *ingredientes):
+	    cha = ingredientes
+	    return cha
+
+	def beber(self, oque):
+	    self.louco = True
+	    self.careta = False
+	    self.versos = [''espinho'', ''espinho'']
+
+	    return self
+
+	def guardar_cogumelos(self, cogumelos):
+	    self.recanto_espiritual = cogumelos
+	    return self.recanto_espiritual
+
+
+class TestSoParaLoucos(unittest.TestCase):
+    def setUp(self):
+    	self.pessoa = Pessoa()
+
+    def test_deve_ser_careta_sem_tomar_nada(self):
+    	self.pessoa |should| be_careta
+
+    def test_deve_estar_louco_depois_de_tomar_um_cha_de_cogumelo(self):
+    	cogumelos = self.pessoa.colher_cogumelos()
+
+    	cha_de_cogumelo = self.pessoa.fazer_cha(cogumelos)
+    	cha_de_cogumelo |should| contain(cogumelos)
+
+    	self.pessoa.beber(cha_de_cogumelo) |should| be_louco
+    	self.pessoa.versos |should| have(2).espinhos
+
+    def test_deve_guardar_cogumelos_escondidos(self):
+        cogumelos = self.pessoa.colher_cogumelos()
+    	self.pessoa.guardar_cogumelos(cogumelos)
+    	self.pessoa.recanto_espiritual |should| have(5).cogumelos
+
+if __name__ == ''__main__'':
+    unittest.main()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Só isso?
+Isso foi só um exemplo ludico, pra mostrar as possibilidades da ferramneta! Hoje ela contem varios matchers(as funções de teste) para os mais variados objetivos. Voce pode ver a lista completa aqui
+Voce tambem pode fazer seus proprios matchers
+Acabou?
+Se voce gostou do projeto e quer ajudar, aqui vc encontra varias formas de contribuir!
+Entao eh isso, Até a proxima xD&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/development-should-be-funny-python-e-tdd&quot;&gt;development |should| be_funny - Python e TDD&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on January 26, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Aprenda Vim Progressivamente]]></title>
+  <link rel="alternate" type="text/html" href="/aprenda-vim-progressivamente" />
+  <id>/aprenda-vim-progressivamente</id>
+  <published>2012-01-26T00:00:00-02:00</published>
+  <updated>2012-01-26T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Sou usuario do vim a algum tempo e sempre estou procurando aprender mais e mais sobre esse excelente editor.
+Recentemente encontrei um otimo post no blog do Yann Esposito para iniciantes aprenderem vim rapidamente e tambem para veteranos querendo aprender algumas magicas desse otimo edito de texto.
+Gostei tanto do post que resolvi traduzi-lo para divulgar o vim e mostrar como voar com ele.
+Então vamos ao post!&lt;/p&gt;
+
+&lt;p&gt;TL;DR: Quer aprender vim (o melhor editor conhecido pela humanidade) da forma mais rapida possivel. Eu sugiro um caminho. Comece aprendendo o basico pra sobreviver, entao integre todos os truques devagar&lt;/p&gt;
+
+&lt;p&gt;Vim, o editor de texto de seis bilhões de dólares&lt;/p&gt;
+
+&lt;p&gt;Melhor, mais rapido, mais forte&lt;/p&gt;
+
+&lt;p&gt;Aprenda vim e ele será seu ultimo editor de texto. Ele não é o melhor editor de texto, eu sei. É dificil de aprender, mas incrivel de usar.&lt;/p&gt;
+
+&lt;p&gt;Eu sugiro aprende-lo em 4 passos:
+Sobreviva
+Sinta-se confortavel
+Sinta-se melhor, mais rapido, mais forte
+Use os superpoderes do vim
+No final dessa jornada você se tornará um superstar do vim!
+Mas antes de começar, um aviso. Aprender vim será doloroso no começo. Isso leva tempo. É muito parecido com aprender a tocar um instrumento musical. Não espere ser eficiente com vim do que com outro editor em 3 dias. Na verdade vai levar 2 semanas ao inves de 3 dias.
+Nivel 1 - Sobreviva
+insta-le o vim
+abra o vim
+NÃO FAÇA NADA! Leia
+Em um editor de texto normal, escrever no teclado é o suficiente para escrever alguma coisa e ve-la na tela. Não dessa vez. Vim está no modo Normal. Vamos entrar no modo de Inserção. Digite a letra i.
+Agora voce se sente um pouco melhor. Voce pode digitar textos como um editor de texto normal. Para voltar para o modo normal, tecle ESC.
+Voce sabe trocar entre o modo Normal e de Inserção. E agora a lista de comandos que voce pode usar no modo Normal para sobreviver:&lt;/p&gt;
+
+&lt;p&gt;i - modo de Inserção. Tecle ESC para voltar ao modo Normal.
+x - para deletar o caracter em baixo do cursor.
+:wq - Salvar e Sair (:w para salvar, :q para sair).
+dd - deletar e copiar a linha atual.
+p - colar.
+Recomendado:
+hjkl (altamente recomendado, mas nao obrigatorio) - movimentos basicos do cursor (←↓↑→). Dica: j é a seta para baixo.
+:help &lt;comando&gt; - mostra o help do &lt;comando&gt;, voce pode começar a usar o :help sem nada mais.&lt;/comando&gt;&lt;/comando&gt;&lt;/p&gt;
+
+&lt;p&gt;Somenten 5 comandos. Isso é muito pouco para começar. Uma vez que esses comandos começarem a sair naturalmente (pode ser no final do dia), voce pode ir para o nivel 2.
+Mas antes apenas uma observação no modo Normal. Em editores normais, para copiar voce deve usar a tecla Ctrl (Ctrl + c geralmente). Na verdade, quando voce pressiona o Ctrl, é como se todas as funcionalidades das teclas mudassem. Com vim no modo Normal, é como se seu Ctrl sempre estivesse pressionado.
+Uma ultima observação sobre notações:
+ao invés de escrever Ctrl-V, vamos escrever &lt;c-v&gt;
+comandos começam com : e terminam com &lt;enter&gt;. Por exemplo, quando eu escrever :q isso significa :q&lt;enter&gt;
+Nivel 2 - Sinta-se confortavel
+Voce sabe os comandos para sobreviver. Agora é hora de aprender mais alguns comandos. Eu sugiro:
+Variações do modo de Inserção:&lt;/enter&gt;&lt;/enter&gt;&lt;/c-v&gt;&lt;/p&gt;
+
+&lt;p&gt;a - insere depois do cursor
+o - insere uma nova linha depois da linha corrente
+O - insere uma nova linha antes da linha corrente
+cw - substitui do cursor até o final da palavra&lt;/p&gt;
+
+&lt;p&gt;Movimentos Basicos:&lt;/p&gt;
+
+&lt;p&gt;0 - vai para o inicio da linha
+^ - vai para o primeiro caracter nao-branco da linha
+$ - vai para o final da linha
+g_ - vai para o ultimo caracater nao-branco da linha
+/padrao - procura por padrao&lt;/p&gt;
+
+&lt;p&gt;Copiar/Colar&lt;/p&gt;
+
+&lt;p&gt;P - cola antes do cursor, relembre que p é para colar depois da posição corrente.
+yy - copia a linha corrente, mais facil que o ddP&lt;/p&gt;
+
+&lt;p&gt;Desfazer/Refazer:&lt;/p&gt;
+
+&lt;p&gt;u - desfazer&lt;/p&gt;
+&lt;c-r&gt; (**Ctrl-r**) - refazer
+
+Carregar/Salvar/Sair/Mudar Arquivo (buffer):
+
+:e &amp;lt;caminho/para/arquivo&amp;gt; - abrir
+:w - salvar
+:saveas &amp;lt;caminho/para/arquivo&amp;gt; - salvar em &amp;lt;caminho/para/arquivo/&amp;gt;
+:x, ZZ ou :wq - salvar e sair (:x somente salva se necessario)
+:q! - sair sem salvar, tambem :qa! até mesmo se houver algum buffer modificado escondido
+:bn (resp. :bp) - mostra o proximo (resp. anterior) arquivo (buffer)
+
+Separe algum tempo para aprender esses comandos. Uma vez aprendido, voce deve estar apto para fazer tudo que voce faz em qualquer outro editor. Mas até agora, isso é um pouco estranho. Mas siga-me até o proximo nivel e voce verá porque.
+Nivel 3 - Melhor. Mais Forte. Mais Rapido.
+Parabens por chegar tao longe! Nós podemos começar a parte interessante. No nivel 3, nós iremos falar somente sobre comandos que são compativeis com o vi antigo.
+Melhor
+Vamos ver como o vim faz para te ajudar a repetir um comando:
+. (ponto) - irá repetir o ultimo comando
+N&lt;comando&gt; - irá repetir o comando N vezes.
+Alguns exemplos, abre um arquivo e digite:
+
+2dd - irá deletar 2 linhas
+3p - irá colar o texto 3 vezes
+100idesu ESC - irá escrever “desu” 100 vezes
+. (ponto) - irá repetir o ultimo comando, escrevendo mais 100 vezes “desu”
+3. - irá escrever 3 “desu” (e não 300, muito inteligente)
+
+Mais forte
+Saber como se mover de modo eficiente no vim é muito importante. Não pule esta seção.
+NG - vai para a linha N
+gg - atalho para 1G, vai para o começo do arquivo
+G - vai para a ultima linha
+Andando em palavras:
+
+w - vai para o começo da palavra seguinte
+e - vai para o final da palavra seguinte
+Por padrao, uma palavra é composta de letras e caracteres underscore ( _ ). Vamos chamar de uma PALAVRA um grupo de letras separadas por caracteres em branco. Se voce quiser considerar PALAVRA, entao use letras maiusculas:
+W - vai para o inicio da PALAVRA seguinte
+E - vai para o final da PALAVRA seguinte 
+
+
+
+
+
+Agora vamos falar sobre movimentos mais eficientes:
+
+% - Vai para o correspondente (, [, {
+* (resp #) - vai para a proxima (resp anterior) ocorrencia da palavra sob o cursor.
+
+Acredite em mim, esses tres comandos são ouro.
+Mais rapido
+Lembra sobre a importancia dos movimentos no vim? Aqui está a razão. Muitos comandos podem ser usados seguindo um formato geral:
+
+&lt;posição de=&quot;&quot; inicio=&quot;&quot;&gt;&lt;comando&gt;&lt;posição final=&quot;&quot;&gt;
+
+Por exemplo: 0y$ significa:
+0 - vai para o começo dessa linha
+y - copie daqui
+$ - até o final desta linha
+Nós tambem podemos fazer coisas como ye, copie daqui até o final da palavra. Tambem podemos fazer y2/foo copie até a segunda ocorrencia de “foo”.
+Mas se foi possivel com y (copiar), é tambem possivel com d (deletar), v (seleção visual), gU (maiuscula), gu (minuscula), etc…
+Nivel 4 - Super poderes com vim
+Com todos os comandos anteriores voce ja deve se sentir confortavel com o vim. Mas agora, aqui estao as features realmente maneiras. Algumas dessas features foram a razão pra eu começar a usar o vim.
+mover-se na linha corrente: 0, ^, $, g_, f, F, t, T, ,(virgula), ;
+
+0 - Vai para a coluna 0
+^ - Vai para o primeiro caracter da linha
+$ - vai para a ultima coluna
+g_ - Vai para o ultimo caracter da linha
+fa - Vai para a proxima ocorrencia da letra a na linha. , (resp ;) irá para a ocorrencia anterior da busca (resp proxima).
+t, - Vai para o caracter anterior a primeira ocorrencia de ,
+3fa - Vai procurar a terceira ocorrencia da letra a
+F e T - Parecido com f e t, porem procura pra tras
+
+
+
+
+Uma dica muito util é :dt&quot; que irá remover tudo antes de &quot;.
+Seleção por zona &lt;ação&gt;a&lt;objeto&gt; ou &lt;ação&gt;i&lt;objeto&gt;
+Esses comandos só podem ser usados depois de uma operação no modo Visual. Mas eles são muito poderosos.
+&lt;ação&gt;a&lt;objeto&gt; ou &lt;ação&gt;i&lt;objeto&gt;
+Onde ação pode ser qualquer ação, por exemplo, d (delete), y (copiar), v (selecionar no modo Visual). E um objeto pode ser: w uma palavra, Wuma PALAVRA(palavra extendida), s uma sentença e p um paragrafo. Mas tambem pode ser um caracter natural como &quot;, '', ), }, ].
+Digamos que o cursor esteja no primeiro o de (map (+) (&quot;foo&quot;)).
+
+vi&quot; - irá selecionar foo.
+va&quot; - irá selecionar &quot;foo&quot;.
+vi) - irá selecionar &quot;foo&quot;.
+va) - irá selecionar (&quot;foo&quot;).
+v2i) - irá selecionar map (+) (&quot;foo&quot;).
+v2a) - irá selecionar (map (+) (&quot;foo&quot;)).
+
+Selecionas blocos retangulares &lt;c-v&gt;.
+Blocos retangularss são muito uteis para comentar muitas linhas de código. Tipicamente: ^&lt;c-v&gt;&lt;c-d&gt;I-- [ESC]
+
+^ - vai para o inicio da linha
+&lt;c-v&gt; - inicia a seleção por blocos
+&lt;c-d&gt; - move para baixo (como jjj or %, etc… )
+I-- [ESC] - escreve — para comentar cada linha
+
+
+Note que no Windows voce poderá ter que usar &lt;c-q&gt; ao inves de &lt;c-v&gt; se seu clipboard nao estiver vazio.
+Completar: &lt;c-n&gt; e &lt;c-p&gt;.
+No modo de Inserção, digite no inicio de uma palavra, e entao digite &lt;c-p&gt;, magicamente…
+
+Macros: qa faça alguma coisa q, @a, @@
+qa vai gravar suas açoes num registrador a. Entao @a irá refazer a macro salva no registrador a como se voce tivesse feito isso na mão. @@ é um atalho para refazer a ultima macro executada.
+
+Exemplo
+Numa linha que contem o numero 1, digite isso:
+qaYp&lt;c-a&gt;q  
+qa - começa a gravar
+Yp - duplica esta linha
+&lt;c-a&gt; - incrementa um numero
+q - para a gravaçao
+
+@a - escreverá 2 abaixo do 1
+@@ - escreverá 3 abaixo do 2
+Agora faça 100@@ e criará uma lista de numeros até 103.
+
+
+Seleção Visual: v, V, &lt;c-v&gt;
+Vimos um exemplo com &lt;c-v&gt;. Há tambem v e V. Uma vez que a seleçao foi feita, voce pode:
+
+J - juntar todas as linhas.
+&amp;lt; (resp. &amp;gt;) - indentar para a esquerda (resp. para a direita).
+= - auto indentação
+
+
+Adicione alguma coisa no fim das linhas selecionadas:
+
+&lt;c-v&gt;
+vá para a linha desejada (jjj ou &lt;c-d&gt; ou /padrao ou % etc…)
+$ vá para o fina da linha
+A, escreva alguma coisa, [ESC]
+
+
+Splits: :split e :vsplit.
+Aqui estao os comandos principais, mas voce pode olhar mais em :help split.
+
+:split - irá criar um split (:vsplit criará um split vertical).
+&lt;c-w&gt;&lt;dir&gt; - onde dir é qualquer um de hjkl para mudar de split.
+&lt;c-w&gt;_ (resp. &lt;c-w&gt;|) - maximiza o tamanho do split (resp. split vertical).
+&lt;c-w&gt;+ (resp. &lt;c-w&gt;-) - Aumenta (resp. diminui) o split.
+
+
+
+
+Conclusao
+Aqui estao 90% dos comandos que eu uso todos os dias. Eu sugiro que voce aprenda nao mais que 1 ou 2 comandos por dia. Depois de duas ou tres semanas voce começará a sentir o poder do vim nas suas mãos.
+Aprender Vim é mais uma questao de treinamento que de memorização. Felizmente vim vem com otimas ferramentas e uma execelente documentação. Rodevimtutor para voce se familiarizar com os comandos basicos. Alem disso voce deve ler atentamente está pagina: :help usr_02.txt.
+Entao, voce aprenderá sobre !, folds, registradores, os plugins e muitas outras features. Aprender vim é como se estivesse aprendendo piano e tudo ficará bem.
+Fim do post
+Agora que voce ja sabe vim, use-o da maneira correta. Esqueça seu mouse, Ctrl-c + Ctrl+v, use as features do vim, se forçe a usa-las, eu garanto que depois que voce se sentir confortavel, vai voar.
+Qualquer duvida e/ou critica podem deixar nos comentarios.
+Até a proxima
+OBS: Post totalmente editado no VIM, usando markdown.
+&lt;/c-w&gt;&lt;/c-w&gt;&lt;/c-w&gt;&lt;/c-w&gt;&lt;/dir&gt;&lt;/c-w&gt;&lt;/c-d&gt;&lt;/c-v&gt;&lt;/c-v&gt;&lt;/c-v&gt;&lt;/c-a&gt;&lt;/c-a&gt;&lt;/c-p&gt;&lt;/c-p&gt;&lt;/c-n&gt;&lt;/c-v&gt;&lt;/c-q&gt;&lt;/c-d&gt;&lt;/c-v&gt;&lt;/c-d&gt;&lt;/c-v&gt;&lt;/c-v&gt;&lt;/objeto&gt;&lt;/ação&gt;&lt;/objeto&gt;&lt;/ação&gt;&lt;/objeto&gt;&lt;/ação&gt;&lt;/objeto&gt;&lt;/ação&gt;&lt;/posição&gt;&lt;/comando&gt;&lt;/posição&gt;&lt;/comando&gt;&lt;/c-r&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/aprenda-vim-progressivamente&quot;&gt;Aprenda Vim Progressivamente&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;blog&lt;/a&gt; on January 26, 2012.&lt;/p&gt;</content>
+</entry>
+
+</feed>

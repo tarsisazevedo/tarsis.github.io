@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>development |should| be_funny - Python e TDD &#8211; blog</title>
+<meta name="description" content="">
+<meta name="keywords" content="python, should-dsl, tdd">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="development |should| be_funny - Python e TDD &#8211; blog">
+<meta property="og:description" content="Should o que?!O should-dsl é uma ferramenta de teste que tem como principal objetivo tornar o codigo mais legivel e l...">
+<meta property="og:url" content="/development-should-be-funny-python-e-tdd">
+<meta property="og:site_name" content="blog">
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">blog</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="blog">Home</a>
+            </li>
+            
+            
+                <li><a href="/about" >About</a></li>
+            
+                <li><a href="https://github.com/tarsis" target="_blank">Github</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article">
+
+
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url(/images/typewriter.jpg)"></div>
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>development |should| be_funny - Python e TDD</h1>
+            <p class="date">Jan 26, 2012</p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
+    
+        <p>Should o que?!
+O should-dsl é uma ferramenta de teste que tem como principal objetivo tornar o codigo mais legivel e limpo. (http://www.should-dsl.info/)
+Ok, mas #comofas?
+Depois de instalado (o site ensina como fazer) é bem simples começar a escrever os testes. Tá duvidando, então olha só:
+Esse exemplo eh a implementacao das specs da musica Só para Loucos – Ventania
+So Para Loucos Spec Spec</p>
+
+<p>class Pessoa:
+		louco = False
+		careta = True</p>
+
+<pre><code>	def colher_cogumelos(self):
+	    self.cogumelos = [''cogumelo1'', ''cogumelo2'', ''cogumelo3'', ''cogumelo4'', ''cogumelo5'']
+	    return self.cogumelos
+
+	def fazer_cha(self, *ingredientes):
+	    cha = ingredientes
+	    return cha
+
+	def beber(self, oque):
+	    self.louco = True
+	    self.careta = False
+	    self.versos = [''espinho'', ''espinho'']
+
+	    return self
+
+	def guardar_cogumelos(self, cogumelos):
+	    self.recanto_espiritual = cogumelos
+	    return self.recanto_espiritual
+
+
+class TestSoParaLoucos(unittest.TestCase):
+    def setUp(self):
+    	self.pessoa = Pessoa()
+
+    def test_deve_ser_careta_sem_tomar_nada(self):
+    	self.pessoa |should| be_careta
+
+    def test_deve_estar_louco_depois_de_tomar_um_cha_de_cogumelo(self):
+    	cogumelos = self.pessoa.colher_cogumelos()
+
+    	cha_de_cogumelo = self.pessoa.fazer_cha(cogumelos)
+    	cha_de_cogumelo |should| contain(cogumelos)
+
+    	self.pessoa.beber(cha_de_cogumelo) |should| be_louco
+    	self.pessoa.versos |should| have(2).espinhos
+
+    def test_deve_guardar_cogumelos_escondidos(self):
+        cogumelos = self.pessoa.colher_cogumelos()
+    	self.pessoa.guardar_cogumelos(cogumelos)
+    	self.pessoa.recanto_espiritual |should| have(5).cogumelos
+
+if __name__ == ''__main__'':
+    unittest.main()
+</code></pre>
+
+<p>Só isso?
+Isso foi só um exemplo ludico, pra mostrar as possibilidades da ferramneta! Hoje ela contem varios matchers(as funções de teste) para os mais variados objetivos. Voce pode ver a lista completa aqui
+Voce tambem pode fazer seus proprios matchers
+Acabou?
+Se voce gostou do projeto e quer ajudar, aqui vc encontra varias formas de contribuir!
+Entao eh isso, Até a proxima xD</p>
+
+          
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;development |should| be_funny - Python e TDD&quot;%20%20via%20&#64;tarsisazevedo" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+
+
+      </article>
+
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/review-pro-git" title="[review] Pro Git">[review] Pro Git </a></span>
+              <span class="date">Mar 15, 2012</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/aprendendo-c-formatacao-printf-tutorial" title="Aprendendo C - formatação do printf">Aprendendo C - formatação d... </a></span>
+              <span class="date">Mar 04, 2012</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="/syntax-highlight-no-blog-js-css" title="[dica rapida] syntax hightlight no seu blog com javascript">[dica rapida] syntax hightl... </a></span>
+              <span class="date">Feb 29, 2012</span>
+            </li>
+        
+      </ol>
+      
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:tarsis.azevedo@gmail.com"><span class="foot-link">Contact Me</span></a></li>
+            
+             
+            <li><a id="twit" href="http://twitter.com/tarsisazevedo" target="_blank"><span class="foot-link">@tarsisazevedo</span></a></li> 
+            
+            
+            
+            
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2013 Tarsis Azevedo. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="/assets/js/scripts.js"></script>
+  
+
+  </body>
+</html>
