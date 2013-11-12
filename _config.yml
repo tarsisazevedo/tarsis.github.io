@@ -1,6 +1,6 @@
-title:            blog
-tagline:          A beautiful theme.
-description:      Describe your website.
+title:            Tarsis Azevedo
+tagline:          Sobre programação, web e tudo mais.
+description:      Sobre programação, web e tudo mais.
 #Comment out url when working locally to resolve base urls correctly
 #url: http://blog.tarsisazevedo.com
 
@@ -20,7 +20,8 @@ owner:
 # For external links add external: true
 links:
   - title: About
-    url: /about
+    url: http://tarsisazevedo.com
+    external: true
   - title: Github
     url: https://github.com/tarsis
     external: true
