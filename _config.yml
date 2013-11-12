@@ -2,7 +2,7 @@ title:            Tarsis Azevedo
 tagline:          Sobre programação, web e tudo mais.
 description:      Sobre programação, web e tudo mais.
 #Comment out url when working locally to resolve base urls correctly
-#url: http://blog.tarsisazevedo.com
+url: http://blog.tarsisazevedo.com
 
 # Owner/author information
 owner:
@@ -12,7 +12,6 @@ owner:
   email:          tarsis.azevedo@gmail.com
   twitter:        tarsisazevedo
   github:         tarsis
-  instagram:      tarsisazevedo
   disqus:         blogtarsisazevedo
 
 
