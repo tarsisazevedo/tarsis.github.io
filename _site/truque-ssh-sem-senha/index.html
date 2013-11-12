@@ -90,10 +90,8 @@
             <p class="intro"></p>
           </hgroup>
         </header>
-    
         <p>Voce tem que acessar um servidor muitas vezes ao dia, e esta cansado de digitar senha toda hora? Voce nao aguenta mais gravar mil senhas? Tem que digitar todas as mil senhas para tentar acessar sua maquina remota?  Seus problemas acabaram!!!  Voce só vai precisar de:  Um terminal linux  Senha da maquina que vc acessa (E só mais uma vez, eu garanto)  Alguns comandos linux.   Atenção: se voce nao é muito experiente em linux, peça ajuda de um adulto xD,    Tudo pronto? Entao…    Abra o terminal e digite:    ssh-keygen -t rsa      Bom agora voce vai ver as seguintes mensagens:    Enter file in which to save the key (/home/user1/.ssh/id_rsa):  Enter passphrase (empty for no passphrase):  Enter same passphrase again:       APENAS TECLE ENTER PARA TODAS!!!!    Agora faça o seguinte:    scp ~/.ssh/id_rsa.pub root@sua_maquina_remota:~      Se isso deu certo, agora acesse sua maquina:    ssh root@sua_maquina_remota      Estando na maquina faça o seguinte:    cat id_rsa.pub » .ssh/authorized_keys    Se o diretorio .ssh nao existir, crie-o assim: mkdir .ssh    Feito isso, apenas saia da maquina remota e tente acessar novamente.  Agora voce nao precisa mais de senhas!!!    Porem…  Existe uma lei do universo que diz o seguinte: se algo pode dar errado, vai dar errado, entao…  Se depois de seguir todos esses passos, voce encontrar com esse erro:          “agent admitted failure to sign using the key”         Basta fazer o seguinte na maquina local, nao na maquina remota:         sudo apt-get install ssh-add      Por fim..  deixe seu feedback(problemas, sugestoes, etc) nos comentarios.    Obrigado, e até a proxima pessoal!    Referencias:  http://polishlinux.org/apps/ssh-tricks/  http://www.pedropereira.net/ssh-sem-senha-autenticacao-atraves-de-certificados-rsa/  http://www.baptiste-wicht.com/2010/07/tip-how-to-solve-agent-admitted-failure-to-sign-using-the-key-error/</p>
 
-          
       <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Truque Ssh: Sem Senha&quot;%20%20via%20&#64;tarsisazevedo" data-dnt="true">Share</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
@@ -112,6 +110,11 @@
         <p class="list-title">Recent Posts</p>
          <!-- for1 -->
             <li>
+              <span class="recent-title"><a href="/scti-uenf-2013-eu-fui" title="SCTI - UENF Eu fui!">SCTI - UENF Eu fui! </a></span>
+              <span class="date">Nov 08, 2013</span>
+            </li>
+         <!-- for1 -->
+            <li>
               <span class="recent-title"><a href="/review-pro-git" title="[review] Pro Git">[review] Pro Git </a></span>
               <span class="date">Mar 15, 2012</span>
             </li>
@@ -119,11 +122,6 @@
             <li>
               <span class="recent-title"><a href="/aprendendo-c-formatacao-printf-tutorial" title="Aprendendo C - formatação do printf">Aprendendo C - formatação d... </a></span>
               <span class="date">Mar 04, 2012</span>
-            </li>
-         <!-- for1 -->
-            <li>
-              <span class="recent-title"><a href="/syntax-highlight-no-blog-js-css" title="[dica rapida] syntax hightlight no seu blog com javascript">[dica rapida] syntax hightl... </a></span>
-              <span class="date">Feb 29, 2012</span>
             </li>
         
       </ol>
@@ -154,3 +152,4 @@
 
   </body>
 </html>
+

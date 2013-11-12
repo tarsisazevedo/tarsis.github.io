@@ -1,17 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Tarsis Azevedo</title>
-<subtitle type="text">Sobre programação, web e tudo mais</subtitle>
+<subtitle type="text">Sobre programação, web e tudo mais.</subtitle>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2013-11-11T19:54:58-02:00</updated>
+<updated>2013-11-12T01:58:40-02:00</updated>
 <id>/</id>
 <author>
   <name>Tarsis Azevedo</name>
   <uri>/</uri>
   <email>tarsis.azevedo@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[SCTI - UENF Eu fui!]]></title>
+  <link rel="alternate" type="text/html" href="/scti-uenf-2013-eu-fui" />
+  <id>/scti-uenf-2013-eu-fui</id>
+  <published>2013-11-08T00:00:00-02:00</published>
+  <updated>2013-11-08T00:00:00-02:00</updated>
+  <author>
+    <name>Tarsis Azevedo</name>
+    <uri></uri>
+    <email>tarsis.azevedo@gmail.com</email>
+  </author>
+  <content type="html">&lt;h1 id=&quot;scti---uenf-2013-eu-fui&quot;&gt;SCTI - UENF 2013: Eu fui!&lt;/h1&gt;
+
+&lt;h3 id=&quot;e-foi-foda&quot;&gt;E foi foda!&lt;/h3&gt;
+
+&lt;p&gt;Na ultima sexta (08/11/2013) tive o prazer de palestrar e ministrar um minicurso no SCTI na UENF em Campos dos Goytacazes - RJ à pedidos
+dos meus queridos amigos &lt;a href=&quot;&quot;&gt;Eduardo “Parah”&lt;/a&gt; e &lt;a href=&quot;&quot;&gt;Nathalie Fernadez&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O evento foi voltado principalmente para os alunos das faculdades locais, mas contando tambem com varios desenvolvedores profissionais.
+A organização está de parabens!! Conseguiram fazer um evento de alto nível!&lt;/p&gt;
+
+&lt;p&gt;No minicurso falei sobre como começar um projeto django, demonstrando uma app de todo list.
+O foco era fazer uma app usando o basico do django e com um pouco de client-side.&lt;/p&gt;
+
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;9aeb72302c75013136c60a329a8d6a5f&quot; data-ratio=&quot;1.2994923857868&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;A tarde palestrei sobre codigo limpo, mostrando a importancia de se manter um codigo saudavel e bonito.
+Focando nos exemplos de codigo ruim e tambem mostrei um caso da globo.com.&lt;/p&gt;
+
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;8890cb102c770131ff11122461a0ee5c&quot; data-ratio=&quot;1.2994923857868&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Conversei com varios alunos depois e o feedback foi demais!
+E o que não pode faltar, fizemos um excelente #horaextra depois do evento! :D&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/scti-uenf-2013-eu-fui&quot;&gt;SCTI - UENF Eu fui!&lt;/a&gt; was originally published by Tarsis Azevedo at &lt;a href=&quot;&quot;&gt;Tarsis Azevedo&lt;/a&gt; on November 08, 2013.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
