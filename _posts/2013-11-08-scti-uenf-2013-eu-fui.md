@@ -14,7 +14,7 @@ E foi foda!
 =========================
 
 Na ultima sexta (08/11/2013) tive o prazer de palestrar e ministrar um minicurso no SCTI na UENF em Campos dos Goytacazes - RJ à pedidos
-dos meus queridos amigos [Eduardo "Parah"](https://github.com/ebragaparah) e [Natalie Fernadez]().
+dos meus queridos amigos [Eduardo "Parah"](https://github.com/ebragaparah) e [Natalie Fernadez](https://www.facebook.com/fdrnatalie).
 
 O evento foi voltado principalmente para os alunos das faculdades locais, mas contando também com vários desenvolvedores.
 A organização está de parabens!! Conseguiram fazer um evento de alto nível!
