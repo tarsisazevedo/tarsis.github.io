@@ -4,6 +4,24 @@ title = 'Tarsis Azevedo Site'
 
 theme = "hugo-theme-codex"
 
+[[menu.main]]
+  identifier = "Home"
+  name = "home"
+  title = "home"
+  url = "/"
+
+[[menu.main]]
+  identifier = "articles"
+  name = "articles"
+  title = "Articles"
+  url = "/articles"
+
+[[menu.main]]
+  identifier = "About Me"
+  name = "about me"
+  title = "About Me"
+  url = "/about"
+
 [params]
   twitter = "https://twitter.com/tarsisazevedo"
   github = "https://github.com/tarsisazevedo"
