@@ -1,0 +1,11 @@
+baseURL = 'https://tarsisazevedo.com'
+languageCode = 'pt-br'
+title = 'Tarsis Azevedo Site'
+
+theme = "hugo-theme-codex"
+
+[params]
+  twitter = "https://twitter.com/tarsisazevedo"
+  github = "https://github.com/tarsisazevedo"
+  email = "tarsis.azevedo@gmail.com"
+  linkedin = "https://www.linkedin.com/in/tarsisazevedo/"
