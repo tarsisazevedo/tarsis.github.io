@@ -2,7 +2,7 @@ baseURL = 'https://tarsisazevedo.com/'
 languageCode = 'pt-br'
 title = 'Tarsis Azevedo'
 theme = "hugo-coder"
-defaultcontentlanguage = "en"
+defaultcontentlanguage = "pt-br"
 
 paginate = 20
 
@@ -26,9 +26,9 @@ paginate = 20
   url = "https://www.linkedin.com/in/tarsisazevedo/"
 [[params.social]]
   name = "bsky"
-  icon = "fa-brands fa-x-bsky fa-2x"
+  icon = "fa-brands fa-x-twitter fa-2x"
   weight = 3
-  url = "https://bsky.com/tarsisazevedo.com/"
+  url = "https://bsky.app/profile/tarsisazevedo.com"
 
 # Menu links
 [[menu.main]]
