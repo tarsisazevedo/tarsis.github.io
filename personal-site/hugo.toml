@@ -1,0 +1,41 @@
+baseURL = 'https://tarsisazevedo.com/'
+languageCode = 'pt-br'
+title = 'Tarsis Azevedo'
+theme = "hugo-coder"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+[params]
+  author = "Tarsis Azevedo"
+  info = "Programmer for fun and profit."
+  description = "Data Engineer at Doximity. 15+ YOE as developer, working with Python, Go, Infra and Data."
+  keywords = "blog,developer,personal,data engineer"
+  gravatar = "tarsis.azevedo@gmail.com"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/tarsisazevedo/"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/tarsisazevedo/"
+[[params.social]]
+  name = "bsky"
+  icon = "fa-brands fa-x-bsky fa-2x"
+  weight = 3
+  url = "https://bsky.com/tarsisazevedo.com/"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
