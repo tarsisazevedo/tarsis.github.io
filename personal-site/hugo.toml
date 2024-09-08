@@ -13,6 +13,9 @@ paginate = 20
   keywords = "blog,developer,personal,data engineer"
   gravatar = "tarsis.azevedo@gmail.com"
 
+[params.goatCounter]
+  code = "tarsisazevedo"
+
 # Social links
 [[params.social]]
   name = "Github"
