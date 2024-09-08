@@ -8,10 +8,11 @@ paginate = 20
 
 [params]
   author = "Tarsis Azevedo"
-  info = "Programmer for fun and profit."
+  info = "Programador por diversão e dinheiro. Engenheiro de Dados e de Software na Doximity."
   description = "Data Engineer at Doximity. 15+ YOE as developer, working with Python, Go, Infra and Data."
-  keywords = "blog,developer,personal,data engineer"
+  keywords = "blog,developer,personal,data engineer,engenharia de dados,programação,python"
   gravatar = "tarsis.azevedo@gmail.com"
+  colorScheme = "light"
 
 [params.goatCounter]
   code = "tarsisazevedo"
