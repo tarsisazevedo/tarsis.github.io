@@ -13,9 +13,13 @@ paginate = 20
   keywords = "blog,developer,personal,data engineer,engenharia de dados,programação,python"
   gravatar = "tarsis.azevedo@gmail.com"
   colorScheme = "light"
+  faviconSVG = "images/favicon.webp"
+  favicon_32 = "images/favicon.png"
+  favicon_16 = "images/favicon.png"
 
 [params.goatCounter]
   code = "tarsisazevedo"
+
 
 # Social links
 [[params.social]]
